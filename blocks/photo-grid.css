@@ -7,8 +7,6 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
-
-  /*paddings , left 43 y right53  */
 }
 
 .photo-grid__item {

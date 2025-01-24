@@ -8,9 +8,9 @@
   margin-top: 80px; /*no se contradice con el margin auto*/
   row-gap: 80px; /*funciono para generar espacio entre place y place*/
 }
-.place {
+.places__place {
   display: grid;
-  grid-template-columns: 1fr 1fr; /*expresarlo asi quiza hace el efecto que no se separen la img de texto entre ellas */
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   max-width: 100%;
   width: 984px;
@@ -18,7 +18,7 @@
   /*trabajar el metodo grid template areas*/
 }
 
-.place__title {
+.places__place-title {
   color: #ffffff;
   font-family: Inter, sans-serif;
   margin: 0;
@@ -27,30 +27,29 @@
   font-size: 72px;
   line-height: 76px;
 }
-.image__place {
+.places__image-place {
   max-width: 100%;
   width: 460px;
 }
 
-.image__text {
+.places__image-text {
   color: white;
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: Regular;
-  justify-content: center; /*lo agrege pensando que centraria especialmente cuando llega a320*/
+  justify-content: center;
 }
-.artista {
+.places__artista {
   align-self: end;
-  /*una propiedad que lo ubique en la parte bottom de su grid, alineado con el bottom del titulo */
 }
-.artista__title {
+.places__artista-title {
   color: #aaaaaa;
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: Regular;
   margin: 0;
 }
-.artista__name {
+.places__artista-name {
   color: #ffffff;
   font-family: Inter, sans-serif;
   font-size: 18px;
@@ -58,7 +57,7 @@
   margin: 0;
 }
 
-.city__info {
+.places__city-info {
   color: #ffffff;
   font-family: Inter, sans-serif;
   font-size: 18px;
@@ -67,10 +66,9 @@
   font-size: 18px;
   line-height: 163%;
   margin: 0;
-  /*falta generar un margen derecho en relacion a su bloque/places*/
 }
 
-.button {
+.places__button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -93,32 +91,32 @@
 }
 
 @media screen and (max-width: 768px) {
-  .image__place {
+  .places__image-place {
     width: 340px;
   }
-  .place__title {
+  .places__place-title {
     font-size: 42px;
   }
-  .city__info {
+  .places__city-info {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .image__place {
+  .places__image-place {
     width: 320px;
   }
-  .place__title {
+  .places__place-title {
     font-size: 32px;
     padding-bottom: 30px;
     line-height: 35px;
   }
-  .button {
+  .places__button{
     width: 288px;
     font-size: 14px;
   }
 
-  .place {
+  .places {
     display: block;
   }
 }
