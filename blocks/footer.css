@@ -1,6 +1,7 @@
 .footer {
   display: flex;
   justify-content: center;
+  margin-top: 90px;
 }
 
 .footer__copyright {
@@ -15,6 +16,10 @@
 }
 
 @media screen and (max-width: 320px) {
+  .footer {
+    margin-top: 65px;
+  }
+
   .footer__copyright {
     line-height: 14px;
   }

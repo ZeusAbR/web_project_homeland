@@ -5,7 +5,7 @@
   width: 987px;
   max-width: 100%;
   margin: auto;
-  margin-top: 80px;/*no se contradice con el margin auto*/
+  margin-top: 80px; /*no se contradice con el margin auto*/
   row-gap: 80px; /*funciono para generar espacio entre place y place*/
 }
 .place {
@@ -14,6 +14,7 @@
   grid-template-rows: auto;
   max-width: 100%;
   width: 984px;
+  gap: 48px;
   /*trabajar el metodo grid template areas*/
 }
 
@@ -39,6 +40,8 @@
   justify-content: center; /*lo agrege pensando que centraria especialmente cuando llega a320*/
 }
 .artista {
+  align-self: end;
+  /*una propiedad que lo ubique en la parte bottom de su grid, alineado con el bottom del titulo */
 }
 .artista__title {
   color: #aaaaaa;
@@ -64,6 +67,7 @@
   font-size: 18px;
   line-height: 163%;
   margin: 0;
+  /*falta generar un margen derecho en relacion a su bloque/places*/
 }
 
 .button {
@@ -78,6 +82,14 @@
   width: 100%;
   max-width: 289px;
   color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 48px;
+  /*aun esta fuera de su margen izquierdo en relacion a su bloque/places
+  y le faltan una distacia de 48 y 30 hacia sus bloques on top */
 }
 
 @media screen and (max-width: 768px) {
@@ -98,9 +110,12 @@
   }
   .place__title {
     font-size: 32px;
+    padding-bottom: 30px;
+    line-height: 35px;
   }
   .button {
     width: 288px;
+    font-size: 14px;
   }
 
   .place {
