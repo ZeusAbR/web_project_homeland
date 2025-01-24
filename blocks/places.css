@@ -36,7 +36,7 @@
   color: white;
   font-family: Inter, sans-serif;
   font-size: 18px;
-  font-weight: Regular;
+  font-weight: 400;
   justify-content: center;
 }
 .places__artista {
@@ -46,14 +46,14 @@
   color: #aaaaaa;
   font-family: Inter, sans-serif;
   font-size: 12px;
-  font-weight: Regular;
+  font-weight: 400;
   margin: 0;
 }
 .places__artista-name {
   color: #ffffff;
   font-family: Inter, sans-serif;
   font-size: 18px;
-  font-weight: Regular;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -111,7 +111,7 @@
     padding-bottom: 30px;
     line-height: 35px;
   }
-  .places__button{
+  .places__button {
     width: 288px;
     font-size: 14px;
   }
