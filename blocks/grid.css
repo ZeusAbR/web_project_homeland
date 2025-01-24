@@ -1,0 +1,29 @@
+.photo-grid {
+  width: 100%;
+  max-width: 1184px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  /*paddings , left 43 y right53  */
+}
+
+.photo-grid__item {
+  width: 100%;
+  max-width: 284px;
+}
+
+@media screen and (max-width: 768px) {
+  .photo-grid__item {
+    max-width: 352px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .photo-grid__item {
+    max-width: 288px;
+  }
+}

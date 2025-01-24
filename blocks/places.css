@@ -1,0 +1,109 @@
+.places {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 987px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 80px;/*no se contradice con el margin auto*/
+  row-gap: 80px; /*funciono para generar espacio entre place y place*/
+}
+.place {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*expresarlo asi quiza hace el efecto que no se separen la img de texto entre ellas */
+  grid-template-rows: auto;
+  max-width: 100%;
+  width: 984px;
+  /*trabajar el metodo grid template areas*/
+}
+
+.place__title {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+}
+.image__place {
+  max-width: 100%;
+  width: 460px;
+}
+
+.image__text {
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: Regular;
+  justify-content: center; /*lo agrege pensando que centraria especialmente cuando llega a320*/
+}
+.artista {
+}
+.artista__title {
+  color: #aaaaaa;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: Regular;
+  margin: 0;
+}
+.artista__name {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: Regular;
+  margin: 0;
+}
+
+.city__info {
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 13px 20px;
+  gap: 10px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 289px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .image__place {
+    width: 340px;
+  }
+  .place__title {
+    font-size: 42px;
+  }
+  .city__info {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .image__place {
+    width: 320px;
+  }
+  .place__title {
+    font-size: 32px;
+  }
+  .button {
+    width: 288px;
+  }
+
+  .place {
+    display: block;
+  }
+}
