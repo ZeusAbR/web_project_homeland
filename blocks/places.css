@@ -30,6 +30,7 @@
 .places__image-place {
   max-width: 100%;
   width: 460px;
+  box-shadow: 5px -9px 3px #000;
 }
 
 .places__image-text {
@@ -80,6 +81,7 @@
   width: 100%;
   max-width: 289px;
   color: #ffffff;
+
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
