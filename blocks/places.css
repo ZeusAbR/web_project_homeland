@@ -91,6 +91,9 @@
   /*aun esta fuera de su margen izquierdo en relacion a su bloque/places
   y le faltan una distacia de 48 y 30 hacia sus bloques on top */
 }
+.places__button:hover {
+  background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
+}
 
 @media screen and (max-width: 768px) {
   .places__image-place {
