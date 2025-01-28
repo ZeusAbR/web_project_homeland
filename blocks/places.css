@@ -5,20 +5,31 @@
   width: 987px;
   max-width: 100%;
   margin: auto;
-  margin-top: 80px; /*no se contradice con el margin auto*/
-  row-gap: 80px; /*funciono para generar espacio entre place y place*/
+}
+.places__cities {
+  grid-area: texto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .places__place {
   display: grid;
+  grid-template-areas:
+    "title artist"
+    "imagen texto"
+    "button texto";
+  grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  /*grid-template-rows: */
   max-width: 100%;
   width: 984px;
   gap: 48px;
+  margin-top: 80px;
   /*trabajar el metodo grid template areas*/
 }
 
 .places__place-title {
+  grid-area: title;
   color: #ffffff;
   font-family: Inter, sans-serif;
   margin: 0;
@@ -28,6 +39,7 @@
   line-height: 76px;
 }
 .places__image-place {
+  grid-area: imagen;
   max-width: 100%;
   width: 460px;
   box-shadow: 5px -9px 3px #000;
@@ -41,6 +53,7 @@
   justify-content: center;
 }
 .places__artista {
+  grid-area: artist;
   align-self: end;
 }
 .places__artista-title {
@@ -59,6 +72,7 @@
 }
 
 .places__city-info {
+  grid-area: texto;
   color: #ffffff;
   font-family: Inter, sans-serif;
   font-size: 18px;
@@ -70,6 +84,7 @@
 }
 
 .places__button {
+  grid-area: button;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -81,6 +96,8 @@
   width: 100%;
   max-width: 289px;
   color: #ffffff;
+  height: 48px;
+  box-sizing: border-box;
 
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -96,6 +113,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .places__place {
+    margin-top: 72px;
+  }
+
   .places__image-place {
     width: 340px;
   }
@@ -107,7 +128,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
   .places__image-place {
     width: 320px;
   }
@@ -116,6 +137,16 @@
     padding-bottom: 30px;
     line-height: 35px;
   }
+  .places__place {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .places__artista {
+    align-self: start;
+  }
+
   .places__button {
     width: 288px;
     font-size: 14px;
