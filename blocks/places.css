@@ -25,7 +25,6 @@
   width: 984px;
   gap: 48px;
   margin-top: 80px;
-  /*trabajar el metodo grid template areas*/
 }
 
 .places__place-title {
@@ -105,8 +104,6 @@
   font-size: 18px;
   line-height: 22px;
   margin-top: 48px;
-  /*aun esta fuera de su margen izquierdo en relacion a su bloque/places
-  y le faltan una distacia de 48 y 30 hacia sus bloques on top */
 }
 .places__button:hover {
   background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
@@ -122,9 +119,21 @@
   }
   .places__place-title {
     font-size: 42px;
+    padding: 0 10px;
+  }
+  .places__artista-title {
+    padding: 0 10px;
+  }
+  .places__artista-name {
+    padding: 0 10px;
   }
   .places__city-info {
     font-size: 16px;
+    padding: 0 10px;
+  }
+  .places__button {
+    font-size: 16px;
+    padding: 13px;
   }
 }
 
