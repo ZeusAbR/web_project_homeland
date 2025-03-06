@@ -141,7 +141,9 @@
 
 @media screen and (max-width: 550px) {
   .places__image-place {
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
+    padding: 0;
   }
   .places__place-title {
     font-size: 32px;
@@ -160,6 +162,7 @@
 
   .places__button {
     width: 288px;
+    max-width: 100%;
     font-size: 14px;
   }
 
